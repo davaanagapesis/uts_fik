@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>One Piece</title>
+  <link rel="stylesheet" href="css/styless.css">
+</head>
+
+<button onclick="window.location.href='index.html'" class="back-button">
+    Back to Home
+  </button>
+<body>
+
+  <div class="container">
+    <div class="card-grid">
+      <!-- Member Cards -->
+      <div class="card" onclick="showMemberBio('Monkey D Luffy')">
+        <div class="background" style="background-image: url('image/A1.jpg');"></div>
+        <div class="content">
+          <h3>Monkey D Luffy</h3>
+        </div>
+      </div>
+      <div class="card" onclick="showMemberBio('Roronoa Zoro')">
+        <div class="background" style="background-image: url('image/A2.jpg');"></div>
+        <div class="content">
+          <h3>Roronoa Zoro</h3>
+        </div>
+      </div>
+
+
+      <div class="card" onclick="showMemberBio('Vinsmoke Sanji')">
+        <div class="background" style="background-image: url('image/A3.jpg');"></div>
+        <div class="content">
+          <h3>Vinsmoke Sanji</h3>
+        </div>
+      </div>
+      <div class="card" onclick="showMemberBio('Nerona Nami')">
+        <div class="background" style="background-image: url('image/A4.jpg');"></div>
+        <div class="content">
+          <h3>Nerona Nami</h3>
+        </div>
+      </div>
+      <div class="card" onclick="showMemberBio('God Usop')">
+        <div class="background" style="background-image: url('image/A5.jpg');"></div>
+        <div class="content">
+          <h3>God Usop</h3>
+        </div>
+      </div>
+
+      <div class="card" onclick="showMemberBio('Tony Tony Choper')">
+        <div class="background" style="background-image: url('image/A6.jpg');"></div>
+        <div class="content">
+          <h3>Tony Tony Choper</h3>
+        </div>
+      </div>
+
+      <div class="card" onclick="showMemberBio('Nico Robin')">
+        <div class="background" style="background-image: url('image/A7.jpg');"></div>
+        <div class="content">
+          <h3>Nico Robin</h3>
+        </div>
+      </div>
+
+      <div class="card" onclick="showMemberBio('Franky')">
+        <div class="background" style="background-image: url('image/A8.jpg');"></div>
+        <div class="content">
+          <h3>Franky</h3>
+        </div>
+      </div>
+
+      <div class="card" onclick="showMemberBio('Brook')">
+        <div class="background" style="background-image: url('image/A9.jpg');"></div>
+        <div class="content">
+          <h3>Brook</h3>
+        </div> 
+      </div>
+
+      <div class="card" onclick="showMemberBio('Jinbei')">
+        <div class="background" style="background-image: url('image/A10.jpg');"></div>
+        <div class="content">
+          <h3>Jinbei</h3>
+        </div>
+      </div>
+
+      <div class="card" onclick="showMemberBio('All Kru')">
+        <div class="background" style="background-image: url('image/full.jpg');"></div>
+        <div class="content">
+          <h3>All Kru</h3>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Modal for Member Bio -->
+  <div id="bioModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <div id="bioContent"></div>
+    </div>
+  </div>
+
+
+  <script src="js/tentang.js"></script>
+</body>
+</html>

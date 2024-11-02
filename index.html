@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>One Piece</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>One Piece</h1>
+        <img src="image/jolly.png" alt="ONE PIECE" class="logo" />
+      </header>
+
+      <nav class="main-nav">
+        <ul>
+          <li>
+            <a href="tentang.html" onclick="showContent('tentang')">Tentang</a>
+          </li>
+          <li>
+            <a href="member.html" onclick="showContent('Kru')">Kru</a>
+          </li>
+        </ul>
+      </nav>
+
+      <aside>
+        <h3>Kru Mugiwara No Luffy Profile</h3>
+        <div id="member-list">
+          <a href="#" onclick="showMember('Monkey D Luffy')">Monkey D Luffy</a>
+          <a href="#" onclick="showMember('Roronoa Zoro')">Roronoa Zoro</a>
+          <a href="#" onclick="showMember('Vinsmoke Sanji')">Vinsmoke Sanji</a>
+          <a href="#" onclick="showMember('Nerona Nami')">Nerona Nami</a>
+          <a href="#" onclick="showMember('God Usop')">God Usop</a>
+          <a href="#" onclick="showMember('Tony Tony Chopper')">Tony Tony Chopper</a>
+          <a href="#" onclick="showMember('Nico Robin')">Nico Robin</a>
+          <a href="#" onclick="showMember('Franky')">Franky</a>
+          <a href="#" onclick="showMember('Brook')">Brook</a>
+          <a href="#" onclick="showMember('Jinbei')">Jinbei</a>
+        </div>
+      </aside>
+
+      <main id="content">
+        <p>Select a kru to view their profile.</p>
+      </main>
+
+      <footer>
+        <a
+          href="https://id.wikipedia.org/wiki/One_Piece"
+          target="_blank"
+          >&copy; 2024 One Piece. All rights reserved.</a
+        >
+      </footer>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
